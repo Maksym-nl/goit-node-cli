@@ -8,6 +8,7 @@ export async function listContacts() {
   const data = await fs.readFile(contactsPath, "utf-8");
   return data.toString();
 }
+
 // ...твій код. Повертає об'єкт контакту з таким id. Повертає null, якщо контакт з таким id не знайдений.
 export async function getContactById(contactId) {
   const contacts = await listContacts();
